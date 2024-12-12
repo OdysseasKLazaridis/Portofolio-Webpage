@@ -91,7 +91,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background:#232323;
 		height: 100%;
 		min-width: 320px;
 	}
@@ -434,7 +434,7 @@ input, select, textarea {
 			transform-origin: 50% 50%;
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'Bungee', sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -621,8 +621,8 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
-		color: #39454b;
+		background: #232323;
+		color: #DCDCDC;
 		padding: 2em;
 	}
 
@@ -642,7 +642,7 @@ input, select, textarea {
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color: rgba(255, 255, 255, 0.9);
+					background-color: black;
 				}
 
 		}
@@ -665,7 +665,7 @@ input, select, textarea {
 		background-color: #98c593;
 		border: 0;
 		border-radius: 3.5em;
-		color: #ffffff;
+		color: #DCDCDC;
 		cursor: pointer;
 		display: inline-block;
 		height: 3.5em;
@@ -686,7 +686,7 @@ input, select, textarea {
 			height: 5em;
 			line-height: 4.5em;
 			padding: 0;
-			background-image: url("static/images/dark-arrow.svg");
+			background-image: url("images/dark-arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
@@ -761,7 +761,7 @@ input, select, textarea {
 			input[type="reset"].style2.down,
 			.button.style2.down,
 			button.style2.down {
-				background-image: url("static/images/arrow.svg");
+				background-image: url("images/arrow.svg");
 			}
 
 /* Form */
@@ -965,7 +965,7 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: url("static/images/overlay.png");
+			background: url("images/overlay.png");
 		}
 
 		.image img {
@@ -1310,7 +1310,7 @@ input, select, textarea {
 			position: absolute;
 			width: 96px;
 			height: 64px;
-			background: url("static/images/poptrox-nav.svg");
+			background: url("images/poptrox-nav.svg");
 			top: calc(50% - 1.5em);
 			margin: -32px 0 0 0;
 		}
@@ -1376,7 +1376,7 @@ input, select, textarea {
 				height: 40px;
 				border-radius: 100%;
 				box-shadow: inset 0 0 0 2px #fff;
-				background: url("static/images/poptrox-closer.svg") center center;
+				background: url("images/poptrox-closer.svg") center center;
 				color: #ffffff !important;
 			}
 
@@ -1824,98 +1824,7 @@ input, select, textarea {
 
 		}
 
-/* Header */
 
-	#header {
-		position: fixed;
-		z-index: 10000;
-		left: 0;
-		top: 0;
-		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
-		height: 3em;
-		line-height: 3em;
-		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
-	}
-
-		#header h1 {
-			position: absolute;
-			left: 1em;
-			top: 0;
-			height: 3em;
-			line-height: 3em;
-			cursor: default;
-		}
-
-			#header h1 a {
-				font-size: 1.25em;
-			}
-
-		#header nav {
-			position: absolute;
-			right: 0.5em;
-			top: 0;
-			height: 3em;
-			line-height: 3em;
-		}
-
-			#header nav ul {
-				margin: 0;
-			}
-
-				#header nav ul li {
-					display: inline-block;
-					margin-left: 0.5em;
-					font-size: 0.9em;
-				}
-
-					#header nav ul li a {
-						display: block;
-						color: inherit;
-						text-decoration: none;
-						height: 3em;
-						line-height: 3em;
-						padding: 0 0.5em 0 0.5em;
-						outline: 0;
-					}
-
-		@media screen and (max-width: 736px) {
-
-			#header {
-				height: 2.5em;
-				line-height: 2.5em;
-			}
-
-				#header h1 {
-					text-align: center;
-					position: relative;
-					left: 0;
-					top: 0;
-					height: 2.5em;
-					line-height: 2.5em;
-				}
-
-					#header h1 a {
-						font-size: 1em;
-					}
-
-				#header nav {
-					display: none;
-				}
-
-		}
-
-	body {
-		padding-top: 3em;
-	}
-
-		@media screen and (max-width: 736px) {
-
-			body {
-				padding-top: 2.5em;
-			}
-
-		}
 
 /* Main */
 
@@ -2043,15 +1952,15 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background: #232323;
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				background: #232323;
 			}
 
 		.main.dark {
-			color: #ffffff;
+			color: #000;
 		}
 
 			.main.dark a {
@@ -2071,7 +1980,7 @@ input, select, textarea {
 				}
 
 				.main.dark .button.style2.down {
-					background-image: url("static/images/dark-arrow.svg");
+					background-image: url("images/dark-arrow.svg");
 				}
 
 		body.is-touch .main {
@@ -2190,7 +2099,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #b9babb;
+				color:#DCDCDC;
 			}
 
 		#footer ul.menu {
@@ -2198,7 +2107,7 @@ input, select, textarea {
 		}
 
 			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
+				border-left-color: white;
 				font-size: 0.9em;
 			}
 
@@ -2244,7 +2153,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("static/images/overlay.png"), url("../../static/images/intro.jpg");
+		background: url("images/overlay.png"), url("../../static/images/intro.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2254,20 +2163,22 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("static/images/overlay.png"), url("../../static/images/one.jpg");
-		background-size: 256px 256px, cover;
+		background: url("images/overlay.png"), url("../../static/images/overlay.png");
+		background-size: 1560px 1560px, contain;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
 /* Two */
 
-	#two {
-		background: url("static/images/overlay.png"), url("../../static/images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
+#two {
+    background: 
+        url("images/hount2.png") no-repeat center center, 
+        url("../../static/images/hount2.jpeg") no-repeat center center;
+    background-size: cover, contain;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+}
 
 /* Contact */
 
@@ -2310,3 +2221,236 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Section Styling */
+#custom-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fullscreen height */
+    width: 100vw; /* Fullscreen width */
+    overflow: hidden; /* Hide any overflow */
+    color: #DCDCDC;
+    text-align: center;
+    margin: 0; /* Remove any inherited margins */
+    padding: 0; /* Remove any inherited padding */
+}
+
+#custom-video {
+    position: absolute; /* Make the video fill the section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video span the full width of the container */
+    height: 100%; /* Make the video span the full height of the container */
+    object-fit: cover; /* Ensure the video covers the container, maintaining aspect ratio */
+    object-position: center center; /* Center the video within the container */
+}
+
+/* Position and style for the custom content */
+.custom-content {
+    position: absolute; /* Position over the video */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    text-align: center;
+    color: white;
+    z-index: 9998; /* Ensure the content is above the video but below the button */
+}
+
+.custom-content header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.custom-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/* Custom button inside content */
+.custom-button {
+    background-color: #DCDCDC; /* Semi-transparent button */
+    color: DCDCDC;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: rgba(230, 74, 25, 0.9); /* More opaque on hover */
+    transform: scale(1.05);
+}
+
+
+
+/* Ensure the menu button stays on top of the content */
+.menu-btn {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 20px; /* Adjust this value to position the button vertically */
+    left: 20px; /* Adjust this value to position the button horizontally */
+    z-index: 10000; /* Ensure it stays on top of other content */
+    background-color:  #41424C;; /* Semi-transparent button */
+    color: #DCDCDC;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Hover Effect for Button */
+.menu-btn:hover {
+    background-color: #41424C; /* Darker color on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Full-Screen Dropdown Menu (Now only 1/3 of the screen height) */
+
+/* Styling for the fullscreen menu */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 33vh;
+    background-color: rgba(65, 66, 76, 0.8); /* Transparent dark background */
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Menu Content Styling */
+.menu-content {
+    text-align: center;
+    font-size: 24px;
+}
+
+.menu-content a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.menu-content a:hover {
+    background-color: #575757; /* Change color on hover */
+}
+/* Hover effect for the button */
+.menu-btn:hover {
+    background-color:  #575757; /* More opaque on hover */
+    transform: scale(1.05);
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .menu-content a {
+        font-size: 22px; /* Smaller font size on mobile */
+    }
+
+    .menu-btn {
+        padding: 12px 24px; /* Adjust button size for mobile */
+        font-size: 16px;
+    }
+}
+
+/* Carousel Section */
+.carousel-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #41424C;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 400px; /* Adjust based on your desired size */
+    height: 480px; /* Adjust based on your desired size */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px black;
+    overflow: hidden;
+    background-color: #41424C;
+}
+
+.carousel iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Carousel Controls (optional) */
+.carousel-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .carousel {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .carousel-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1024px) {
+    #custom-video {
+        width: 100%; /* Ensure the video stretches to the full width */
+        height: 80vh; /* Adjust the height to fit the screen */
+        object-fit: cover; /* Keep the video covering the entire area */
+        object-position: center center; /* Keep the video centered */
+    }
+}
+
+/* Optional: Adjusting for even larger screens */
+@media (min-width: 1440px) {
+    #custom-video {
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+    }
+}
+
+/* Custom Media Query for Larger Screens */
+@media (min-width: 1024px) {
+    #custom-video {
+        width: 100%; /* Video will still span the full width */
+        height: 100%; /* Maintain full container coverage */
+        object-fit: cover; /* Prevent squishing or stretching */
+        object-position: center center; /* Keep the video centered */
+    }
+}
+
+/* Section Styling */
+.video-background {
+    position: relative; /* Create a stacking context for the video */
+    width: 100%; /* Make the section span the full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure no extra video or content spills outside */
+}
