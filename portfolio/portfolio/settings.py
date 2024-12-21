@@ -24,9 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-i8h+)=t1&aumkuy=k(a!c^yci@#%hc#+m-)x=!lfx9jn*1kux8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'hnttism.com',        # Your production domain
+    'www.hnttism.com',    # Include subdomains if necessary
+    'localhost',             # For local testing (optional)
+]
 
 
 # Application definition
