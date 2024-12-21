@@ -4,7 +4,12 @@ from django.views.generic import ListView, TemplateView
 
 class HomeView(TemplateView):
     template_name = "index/index.html"
+    
+class Works(TemplateView):
+    template_name = "works.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
+class About(TemplateView):
+    template_name = "about.html"
+
+class Contact(TemplateView):
+    template_name = "contact.html"

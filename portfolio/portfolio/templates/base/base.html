@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+
+    <!-- Page Title -->
+    <title>    {%block title%} {% endblock %} </title>
+    <!--/ Page Title -->
+
+    <meta name="author" content="Pe Themes">
+    <meta name="description" content="Interactive Portfolio Showcase Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700&display=swap" rel="stylesheet">
+
+    <link href="{% static '/css/plugins.css'%}" rel="stylesheet">
+    <link href="{% static '/css/entypo.css'%}" rel="stylesheet">
+    <link href="{% static '/css/all.min.css'%}" rel="stylesheet">
+    <link href="{% static '/css/style.css'%}" rel="stylesheet">
+    <link rel="stylesheet", href="{% static 'css/main.css' %}">
+
+    <!-- Favicons -->
+    <link href="{% static 'images/favicon.png'%}" rel="shortcut icon">
+    <link href="{% static 'images/favicon.png'%}" rel="apple-touch-icon">
+    <!--/ Favicons -->
+</head>
+
+<body>
+
+    <!-- Loading Text -->
+    <div class="loading-text">Loading</div>
+    <!-- Loading Text -->
+ 
+    <!-- Lines (Don't Touch) -->
+    <div class="lines"></div>
+    <!-- /Lines -->
+
+    <!-- Page Loader -->
+    <div class="cygni-loader">
+        <div class="counter" data-count="99">00</div>
+    </div>
+    <!-- /Page Loader -->
+
+    <!-- Overlays (Don't Touch) -->
+    <div class="overlays"></div>
+    <!-- /Overlays -->
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <!-- Branding -->
+        <div class="site-branding">
+            <img src="{% static 'images/cygni-logo.png' %}" alt="Site Logo" class="dark-logo">
+            
+
+            <img src="{% static 'images/cygni-logo-light.png' %}" alt="Site Light Logo" class="light-logo">
+        </div>
+        <!-- /Branding -->
+
+        <!-- Menu -->
+        <div class="site-navigation">
+
+            <!-- Menu Toggle (Don't Touch) -->
+            <div class="menu-toggle"></div>
+            <!-- /Menu Toggle -->
+
+            <!-- Menu Overlays (Don't Touch) -->
+            <div class="menu-overlays"></div>
+            <!-- Menu Overlays -->
+
+            <div class="menu-wrapper">
+
+                <!-- Navigation -->
+                <ul class="menu">
+
+                    <!-- Main Menu -->
+                    <li class="menu-item has-children menu-item-active"><a href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="menu-item"><a href="{% url 'about' %}">Bio</a></li>
+                    <li class="menu-item"><a href="{% url 'works' %}">What I do</a></li>
+                    <li class="menu-item"><a href="{% url 'works' %}">Gallery</a></li>
+                    <li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
+                    <!-- /Main Menu -->
+
+                </ul>
+                <!-- /Navigation -->
+
+            </div>
+
+            <!-- Menu Widget (Left) -->
+            <div class="menu-widget-wrapper mww-1">
+                <div class="menu-widget">
+                    <div class="menu-widget-title">
+                        Based in ;
+                    </div>
+
+                    <h5>Nea Filadelfeia, Athens</h5>
+                </div>
+            </div>
+            <!--/ Menu Widget (Left) -->
+
+            <!-- Menu Widget (Middle) -->
+            <div class="menu-widget-wrapper mww-2">
+                <div class="scrolling-button">
+                    <a href="https://www.instagram.com/hount.ttt/?hl=el">HOUNT</a>
+                </div>
+            </div>
+            <!--/ Menu Widget (Middle) -->
+
+            <!-- Menu Widget (Right -->
+            <div class="menu-widget-wrapper mww-3">
+                <div class="menu-widget">
+                    <ul class="widget-socials">
+                        <li><a href="https://www.instagram.com/hount.ttt/?hl=el">Instagram.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ Menu Widget (Right) -->
+
+        </div>
+        <!-- /Menu -->
+    </header>
+    <!-- /Header -->
+
+    {%block template%}
+    {% endblock %}
+
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="{% static 'js/jquery.smoothState.js' %}"></script>
+    
+    <script src="{% static 'js/page-transitions.js' %}"></script>
+</body>
+
+</html>
